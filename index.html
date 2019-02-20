@@ -5,10 +5,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+ 
   <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenLite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/easing/EasePack.min.js"></script>
@@ -44,13 +41,17 @@
 </html>
 
 <script>
-var $box = $('#box');
-TweenLite.to($box, 0.4, {top: '100%', y: '-100%', ease:Bounce.easeOut, delay: 2, onStart: start});
-TweenLite.to($box, 0.7, {x: '-=200px', y: '-100%', ease:Back.easeInOut, delay: 3});
-TweenLite.to($box, 0.8, {x: '-=200px', y: '-100%', ease:Back.easeInOut, delay: 4.2});
-TweenLite.to($box, 1.5, {top: '50%', y: '-50%', ease:Power0.easeNone, delay: 5});
-TweenLite.to($box, 1.5, {x: '+=400px', ease:Elastic.easeInOut, delay: 7.7});
-TweenLite.to($box, 1.5, {x: '-=400px', rotation: -720, ease: SlowMo.ease.config(0.1, 0.7, false), delay: 10.4});
+var box = document.getElementById('box');
+
+var myDelay = 0;
+var timeOffset = 2.00;
+
+TweenLite.to(box, 0.4, {top: '100%', y: '-100%', ease:Bounce.easeOut, delay: 0, onStart: start});
+TweenLite.to(box, 0.7, {x: '-=200px', y: '-100%', ease:Back.easeInOut, delay: myDelay += timeOffset});
+TweenLite.to(box, 0.8, {x: '-=200px', y: '-100%', ease:Back.easeInOut, delay: myDelay += timeOffset});
+TweenLite.to(box, 1.5, {top: '50%', y: '-50%', ease:Power0.easeNone, delay: myDelay += timeOffset});
+TweenLite.to(box, 1.5, {x: '+=400px', ease:Elastic.easeInOut, delay: myDelay += timeOffset});
+TweenLite.to(box, 1.5, {x: '-=400px', rotation: -720, ease: SlowMo.ease.config(0.1, 0.7, false), delay: myDelay += timeOffset});
 
  
 
