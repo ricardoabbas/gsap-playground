@@ -39,26 +39,51 @@ html, body {
 
   #flexcontainer{
     display: flex;
-    width: 100%;
+    width: 50%;
     height: 70%;
     flex-direction: column-reverse;
+    background-color:rgb(54, 54, 54);
+    margin-top: 6%;
+    font-family: 'Space Mono', monospace;
+    
+  }
+
+  .txtbox{
+    width: 10%;
+    height: 70%;
+    float: left;
+  }
+
+  .rotext{
+    transform: rotate(-90deg);
+    color: #FFF;
 
   }
 
   #line{
-    border-left: 10px solid transparent;
+    border-left: 4px solid transparent;
     opacity: 0;
-
     width: 300px;
-    margin: 0 auto;
-    /*background-color:#2c2c2c;*/
-    
+    background-color:#2c2c2c;
+    float: left;
   }
 
   #lala{
-    margin-top: -12%;
-    margin-left: 7%;
+    margin-top: -5%;
+    margin-left: 10%;
     font-size: 1;
-    color: transparent;
-    opacity: 0;
+    color: #EACD65;
+    /*color: transparent;
+    opacity: 0;*/
+    
   }
+
+  .subtxt{
+    text-transform:uppercase;
+    font-size: 0.4em;
+    margin-left: 10%;
+    margin-top: -10%;
+  }
+
+
+  

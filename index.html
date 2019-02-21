@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
- 
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
   <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenLite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/easing/EasePack.min.js"></script>
@@ -34,11 +34,16 @@
     <div class="boxSmall boxTiny"></div>
   </div>--->
 
-<div id="flexcontainer">
-  <div id="line">
-    <p id="lala">50m</p>
+  <div class="txtbox">
+      <p class="rotext">% SCHÄDELFRAKTUR BEI 90 G</p>
+      </div>
 
-  </div>
+  
+  <div id="flexcontainer">
+    <div id="line">
+      <p id="lala">27 %</p>
+      <p class="subtxt">Twentyseven</p>
+    </div>
 </div>
 
 
@@ -65,23 +70,23 @@ TweenMax.to(document.getElementById("line"), 1, {
 
 <script>
 
-var line = document.querySelectorAll('#line, #lala');
+var line = document.querySelectorAll('#line');
 
-TweenMax.to(line, 2, {
+TweenMax.to(line, 6, {
   scaleY: 1,
-  height: '60%',
-  width: '10%', 
+  height: '90%',
+  width: '50%', 
   opacity:"100",
   ease:Elastic.easeOut,
-  fontSize: '40',
-  color: 'white', 
+  fontSize: '35',
+  color: '#EACD65', 
   /*ease:Quad.easeInOut, */   
        
   
 });
 
-TweenMax.to(line, 1, {
-  borderColor: 'white',    
+TweenMax.to(line, 5, {
+  borderColor: '#EACD65',    
        
   
 });
