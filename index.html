@@ -6,24 +6,16 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/styles.css">
  
-  <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenMax.min.js"></script>
+  <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenLite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/plugins/CSSPlugin.min.js"></script>-->
   <script src="js/scripts.js"></script>
 
   
 
 </head>
-<body>
-
-  <div id="box">
-    <div class="boxSmall"></div>
-    <div class="boxSmall boxTiny"></div>
-  </div>
-
- 
-   
+<body> 
 
 <!----
   <div class="container">
@@ -35,11 +27,42 @@
     </div>
   </div>
 -->
+
+  <!---- BOX EXPERIMENT 
+    <div id="box">
+    <div class="boxSmall"></div>
+    <div class="boxSmall boxTiny"></div>
+  </div>--->
+
+<div id="line">
+  <p class="lala">50m</p>
+
+</div>
+
+
+
+
+
 </body>
-
-
 </html>
 
+<script>
+TweenMax.to(document.getElementById("line"), 1, {
+  height: '40%', 
+  opacity:"1",
+  /*ease:Elastic.easeOut,*/
+  ease:Quad.easeInOut,
+  
+
+});
+
+
+</script>
+
+
+
+
+<!---- BOX EXPERIMENT 
 <script>
 var box = document.getElementById('box');
 
@@ -64,5 +87,6 @@ function start(){
   function complete(){
     console.log('end');
   }
+  </script>
 
-</script>
+-->
