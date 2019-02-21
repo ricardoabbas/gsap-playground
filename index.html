@@ -34,11 +34,12 @@
     <div class="boxSmall boxTiny"></div>
   </div>--->
 
-<div id="line">
-  <p class="lala">50m</p>
+<div id="flexcontainer">
+  <div id="line">
+    <p id="lala">50m</p>
 
+  </div>
 </div>
-
 
 
 
@@ -46,19 +47,46 @@
 </body>
 </html>
 
+<!-----
 <script>
 TweenMax.to(document.getElementById("line"), 1, {
-  height: '40%', 
+  height: '60%',
+  width: '10%', 
   opacity:"1",
-  /*ease:Elastic.easeOut,*/
-  ease:Quad.easeInOut,
+  ease:Elastic.easeOut,
+  /*ease:Quad.easeInOut,   */             
   
 
 });
 
 
-</script>
+</script>--->
 
+
+<script>
+
+var line = document.querySelectorAll('#line, #lala');
+
+TweenMax.to(line, 2, {
+  scaleY: 1,
+  height: '60%',
+  width: '10%', 
+  opacity:"100",
+  ease:Elastic.easeOut,
+  fontSize: '40',
+  color: 'white', 
+  /*ease:Quad.easeInOut, */   
+       
+  
+});
+
+TweenMax.to(line, 1, {
+  borderColor: 'white',    
+       
+  
+});
+
+</script>
 
 
 
