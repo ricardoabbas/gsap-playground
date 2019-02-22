@@ -40,6 +40,7 @@ html, body {
     transform: rotate(-90deg);
     opacity:0;
     position: absolute;
+    float: left;
     font-size: 0.8em;
     bottom:0;
     white-space: nowrap;
@@ -50,10 +51,6 @@ html, body {
     padding-left: 136px;
     padding-bottom: 72px;
   }
-   /*
-  .txtbox, .rotext{
-    border: 1px solid pink;
-  }*/
 
   #line{
     border-left: 3px solid transparent;
@@ -66,30 +63,68 @@ html, body {
 
   #line2{
     border-left: 3px solid #A6A8A6;
-    position: fixed;
-    margin-left: 11.2%;
-    background-color: darkgray;
+    white-space: nowrap;
+    margin-left: 11%;
+    position: absolute;
+    height: 0px;
   }
 
+  #line3{
+    border-left: 3px solid #6F706F;
+    white-space: nowrap;
+    margin-left: 11.9%;
+    position: absolute;
+    height: 0px;
+  }
 
 
   
   .countnumb{
     margin-top: -5%;
-    margin-left: 10%;
+    margin-left: 13%;
     font-size: 1;
-    color: #EACD65;
+  }
+
+
+  .countnumb2{
+    margin-top: -5%;
+    margin-left: 8%;
+    font-size: 1;
+  }
+
+  .countnumb3{
+    margin-top: -5%;
+    margin-left: 5%;
+    font-size: 1;
     /*color: transparent;
     opacity: 0;*/
-    
   }
+
+  
 
   .subtxt{
     text-transform:uppercase;
     font-size: 0.4em;
-    margin-left: 10%;
+    margin-left: 13%;
     margin-top: -10%;
   }
+
+
+  .subtxt2{
+    text-transform:uppercase;
+    font-size: 0.4em;
+    margin-left: 8%;
+    margin-top: -10%;
+  }
+
+  .subtxt3{
+    text-transform:uppercase;
+    font-size: 0.4em;
+    margin-left: 5%;
+    margin-top: -10%;
+  }
+
+
 
 
   
