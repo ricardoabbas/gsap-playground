@@ -34,23 +34,93 @@
     <div class="boxSmall boxTiny"></div>
   </div>--->
 
-  <div class="txtbox">
-      <p class="rotext">% SCHÄDELFRAKTUR BEI 90 G</p>
-      </div>
+  
 
   
-  <div id="flexcontainer">
-    <div id="line">
-      <p id="lala">27 %</p>
-      <p class="subtxt">Twentyseven</p>
-    </div>
-</div>
+<div id="flexcontainer">
 
+    <div class="txtbox">
+        <p id="rotext">% SCHÄDELFRAKTUR BEI 90 G</p>
+    </div>
+
+    <div id="line">
+        <p class="countnumb"> <span id="count">0</span> %</p>
+        <p class="subtxt">Seventwenty</p>
+    </div>
+
+    <div id="line2">
+        <p class="countnumb"> <span id="count2">0</span> %</p>
+        <p class="subtxt">Konkurrenz</p>
+    </div>
+
+
+</div>
 
 
 
 </body>
 </html>
+
+
+
+<script>
+var counter = { var: 0 };
+var tal = document.getElementById("count");
+    
+ TweenMax.to(counter, 2.5, {
+      var: 27, 
+      onUpdate: function () {
+          tal.innerHTML = Math.ceil(counter.var);
+      },
+      ease:Expo.easeInOut
+  });
+
+</script>
+
+
+
+
+<script>
+
+var line = document.querySelectorAll("#line");
+var line2 = document.querySelectorAll("#line2");
+
+TweenMax.set(line, {
+  borderColor: 'transparent', 
+});
+
+TweenMax.to(line, 3, {
+  scaleY: 1,
+  height: '90%',
+  width: '50%', 
+  opacity:"100",
+  ease:Expo.easeInOut,
+  fontSize: '35',
+  color: '#EACD65', 
+  borderColor: '#EACD65',       
+});
+
+
+
+</script>
+
+
+
+<script>
+
+    var line = document.querySelectorAll("#rotext");
+    
+    TweenMax.to(line, 4, {
+      opacity:"100",
+      ease:Expo.easeInOut,
+      fontSize: '0.8em',
+      color: '#fff', 
+      /*ease:Quad.easeInOut, */   
+    });
+    
+    </script>
+
+
 
 <!-----
 <script>
@@ -68,30 +138,6 @@ TweenMax.to(document.getElementById("line"), 1, {
 </script>--->
 
 
-<script>
-
-var line = document.querySelectorAll('#line');
-
-TweenMax.to(line, 6, {
-  scaleY: 1,
-  height: '90%',
-  width: '50%', 
-  opacity:"100",
-  ease:Elastic.easeOut,
-  fontSize: '35',
-  color: '#EACD65', 
-  /*ease:Quad.easeInOut, */   
-       
-  
-});
-
-TweenMax.to(line, 5, {
-  borderColor: '#EACD65',    
-       
-  
-});
-
-</script>
 
 
 
