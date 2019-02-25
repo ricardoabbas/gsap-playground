@@ -54,7 +54,7 @@ var tal = document.getElementById("count");
 var tal2 = document.getElementById("count2");
 var tal3 = document.getElementById("count3");
     
- TweenMax.to(counter, 2.5, {
+ TweenMax.to(counter, 2.3, {
       seventwenty: 70,
       onUpdate: function () {
           tal.innerHTML = Math.ceil(counter.seventwenty);
@@ -64,7 +64,7 @@ var tal3 = document.getElementById("count3");
 
   });
 
-  TweenMax.to(counter, 2.8, {
+  TweenMax.to(counter, 2.6, {
       concurr1: 5,
       concurr2: 20,
       onUpdate: function () {
@@ -74,7 +74,7 @@ var tal3 = document.getElementById("count3");
 
   });
 
-  TweenMax.to(counter, 3, {
+  TweenMax.to(counter, 2.7, {
       norm: 40,
       onUpdate: function () {
           tal3.innerHTML = Math.ceil(counter.norm);
@@ -100,6 +100,7 @@ TweenMax.set([line, line2, line3,], {
   borderColor: 'transparent', 
 });
 
+
 TweenMax.to(line, 2.5, {
   scaleY: 1,
   height: '90%',
@@ -113,7 +114,7 @@ TweenMax.to(line, 2.5, {
 
 TweenMax.to(line2, 3, {
   scaleY: 1,
-  height: '50%',
+  height: '66%',
   width: '29%', 
   opacity:"100",
   ease:Expo.easeInOut,
@@ -124,7 +125,7 @@ TweenMax.to(line2, 3, {
 
 TweenMax.to(line3, 3.5, {
   scaleY: 1,
-  height: '30%',
+  height: '40%',
   width: '29%', 
   opacity:"100",
   ease:Expo.easeInOut,
@@ -146,25 +147,8 @@ TweenMax.to(line3, 3.5, {
       opacity:"100",
       ease:Expo.easeInOut,
       fontSize: '0.8em',
-      color: '#fff', 
-      /*ease:Quad.easeInOut, */   
+      color: '#fff',   
     });
     
     </script>
 
-
-
-<!-----
-<script>
-TweenMax.to(document.getElementById("line"), 1, {
-  height: '60%',
-  width: '10%', 
-  opacity:"1",
-  ease:Elastic.easeOut,
-  /*ease:Quad.easeInOut,   */             
-  
-
-});
-
-
-</script>--->
