@@ -16,7 +16,7 @@ html, body {
   }
 
 
-  #flexcontainer{
+  #flex-container{
     display: flex;
     width: 500px;
     height: 530px;
@@ -34,84 +34,74 @@ html, body {
     transform: rotate(-90deg);
     display: flex;
     align-items: flex-end;
-  
   }
 
 
-  #rotext{
+  #chartsubject{
     white-space: nowrap;
     margin-bottom: 1rem;
   }
 
-
-  #line{
+  #line0, #line1, #line2{
     border-left: 3px solid transparent;
     opacity: 0;
+    height: 0px;
     white-space: nowrap;
-    float: left;
+    position: absolute;
+  }
+
+  #line0{
+    margin-left: 20%;
+  }
+
+  #line1{
+    margin-left: 21.7%;
   }
 
   #line2{
-    border-left: 3px solid #A6A8A6;
-    white-space: nowrap;
-    margin-left: 21.6%;
-    position: absolute;
-    height: 0px;
-  }
-
-
-  #line3{
-    border-left: 3px solid #6F706F;
-    white-space: nowrap;
     margin-left: 23.3%;
-    position: absolute;
-    height: 0px;
   }
 
 
-  .countnumb, .countnumb2, .countnumb3 {
+  .countnumb0, .countnumb1, .countnumb2 {
     transform: translateY(-0.5em);
     font-size: 1;
   }
 
-  .countnumb{
-    margin-left: 11%;
+  .countnumb0{
+    margin-left: 42%;
+  }
+
+  .countnumb1{
+    margin-left: 24%;
   }
 
   .countnumb2{
-    margin-left: 14%;
+    margin-left: 27%;
   }
 
-  .countnumb3{
-    margin-left: 8%;
-  }
-
-  .subtxt, .subtxt2, .subtxt3 {
+  .subtxt0, .subtxt1, .subtxt2 {
     transform: translateY(-3em);
-  }
-  
-  .subtxt{
     text-transform:uppercase;
     font-size: 0.4em;
-    margin-left: 11%;
+  }
+  
+  .subtxt0{
+    margin-left: 42%;
+  }
+
+  .subtxt1{
+    margin-left: 24%;
 
   }
 
   .subtxt2{
-    text-transform:uppercase;
-    font-size: 0.4em;
-    margin-left: 14%;
+    margin-left: 27%;
 
   }
 
-  .subtxt3{
-    text-transform:uppercase;
-    font-size: 0.4em;
-    margin-left: 8%;
-
+  /*
+  *{
+    border: 1px solid pink;
   }
-
-
-
-
-  
+*/

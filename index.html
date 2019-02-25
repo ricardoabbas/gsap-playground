@@ -10,145 +10,36 @@
   <!---<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/TweenLite.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/easing/EasePack.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.0/plugins/CSSPlugin.min.js"></script>-->
-  <script src="js/scripts.js"></script>
-
-  
-
 </head>
+
+
 <body> 
   
-
-  
-<div id="flexcontainer">
+<div id="flex-container">
 
     <div class="txtbox">
-        <p id="rotext">% SCHÄDELFRAKTUR BEI 90 G</p>
+        <p id="chartsubject">% SCHÄDELFRAKTUR BEI 90 G</p>
     </div>
 
-    <div id="line">
-        <p class="countnumb"> <span id="count">0</span> %</p>
-        <p class="subtxt">Seventwenty</p>
+    <div id="line0">
+        <p class="countnumb0"> <span id="count0">0</span> %</p>
+        <p class="subtxt0">Seventwenty</p>
+    </div>
+
+    <div id="line1">
+        <p class="countnumb1"> <span id="count1">0</span> %</p>
+        <p class="subtxt1">Konkurrenz</p>
     </div>
 
     <div id="line2">
         <p class="countnumb2"> <span id="count2">0</span> %</p>
-        <p class="subtxt2">Konkurrenz</p>
-    </div>
-
-    <div id="line3">
-        <p class="countnumb3"> <span id="count3">0</span> %</p>
-        <p class="subtxt3">En norm</p>
+        <p class="subtxt2">En norm</p>
     </div>
 
 </div>
 
 
 
+<script src="js/scripts.js"></script>
 </body>
 </html>
-
-
-<script>
-var counter = { seventwenty: 0, concurr1: 0, concurr2: 0, norm: 0, };
-var tal = document.getElementById("count");
-var tal2 = document.getElementById("count2");
-var tal3 = document.getElementById("count3");
-    
- TweenMax.to(counter, 2.3, {
-      seventwenty: 70,
-      onUpdate: function () {
-          tal.innerHTML = Math.ceil(counter.seventwenty);
-
-      },
-      ease:Cubic.easeInOut
-
-  });
-
-  TweenMax.to(counter, 2.6, {
-      concurr1: 5,
-      concurr2: 20,
-      onUpdate: function () {
-          tal2.innerHTML = Math.ceil(counter.concurr1) + "-" + Math.ceil(counter.concurr2);
-      },
-      ease:Cubic.easeInOut
-
-  });
-
-  TweenMax.to(counter, 2.7, {
-      norm: 40,
-      onUpdate: function () {
-          tal3.innerHTML = Math.ceil(counter.norm);
-      },
-      ease:Cubic.easeInOut
-
-  });
-
- 
-
-</script> 
-
-
-    
-
-<script>
-
-var line = document.querySelectorAll("#line");
-var line2 = document.querySelectorAll("#line2");
-var line3 = document.querySelectorAll("#line3");
-
-TweenMax.set([line, line2, line3,], {
-  borderColor: 'transparent', 
-});
-
-
-TweenMax.to(line, 2.5, {
-  scaleY: 1,
-  height: '90%',
-  width: '50%', 
-  opacity:"100",
-  ease:Expo.easeInOut,
-  fontSize: '35',
-  color: '#EACD65', 
-  borderColor: '#EACD65',       
-});
-
-TweenMax.to(line2, 3, {
-  scaleY: 1,
-  height: '66%',
-  width: '29%', 
-  opacity:"100",
-  ease:Expo.easeInOut,
-  fontSize: '35',
-  color: '#A6A8A6', 
-  borderColor: '#A6A8A6',       
-});
-
-TweenMax.to(line3, 3.5, {
-  scaleY: 1,
-  height: '40%',
-  width: '29%', 
-  opacity:"100",
-  ease:Expo.easeInOut,
-  fontSize: '35',
-  color: '#6F706F', 
-  borderColor: '#6F706F',       
-});
-
-
-</script>
-
-
-
-<script>
-
-    var line = document.querySelectorAll("#rotext");
-    
-    TweenMax.to(line, 1, {
-      opacity:"100",
-      ease:Expo.easeInOut,
-      fontSize: '0.8em',
-      color: '#fff',   
-    });
-    
-    </script>
-
